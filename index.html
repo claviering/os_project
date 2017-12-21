@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8">
 <title>学生成绩管理系统</title>
-<link rel="stylesheet" type="text/css" href="fun.css">
+<link rel="stylesheet" type="text/css" href="index.css">
+<script src="index.js"></script>
 </head>
 
 
@@ -16,22 +17,22 @@
 	<span id="Identity">
 		<tr>
 			<td>
-				<input type="radio" name="radio_1" value="admin">
+				<input type="radio" name="radio_1" value="admin" onclick="click_admin()">
 				<label>admin</label>
 			</td>
 			<td>
-				<input type="radio" name="radio_1" value="teacher">
+				<input type="radio" name="radio_1" value="teacher" onclick="click_teacher()">
 				<label>teacher</label>
 			</td>
 			<td>
-				<input type="radio" name="radio_1" value="student">
+				<input type="radio" name="radio_1" value="student" onclick="click_student()">
 				<label>student</label>
 			</td>
 		</tr>
 	</span>
 
 	<span id="butt">
-		<button type="button">login in</button>
+		<button type="button" onclick="login_in()">login in</button>
 		<button type="button">forget password</button>
 	</span>
 
