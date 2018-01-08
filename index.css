@@ -15,21 +15,4 @@ form
 	margin: 20px;
 }
 
-input
-{
-	 border-style:solid;
-	 border-width:1px;
-}
 
-#Identity
-{
-	position: absolute;
-	left: 30px;
-}
-
-#butt
-{	
-	position: absolute;
-	bottom:-50px;
-	left:30px;
-}

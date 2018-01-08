@@ -12,30 +12,11 @@
 
 
 <div id="login_form">
-	<form>username:  <input type="text" name="username"></form>
-	<form>password:  <input type="password" name="password"></form>
-	<span id="Identity">
-		<tr>
-			<td>
-				<input type="radio" name="radio_1" value="admin" onclick="click_admin()">
-				<label>admin</label>
-			</td>
-			<td>
-				<input type="radio" name="radio_1" value="teacher" onclick="click_teacher()">
-				<label>teacher</label>
-			</td>
-			<td>
-				<input type="radio" name="radio_1" value="student" onclick="click_student()">
-				<label>student</label>
-			</td>
-		</tr>
-	</span>
-
-	<span id="butt">
-		<button type="button" onclick="login_in()">login in</button>
-		<button type="button">forget password</button>
-	</span>
-
+	<form action="login.php" method="post">
+		USERNMAE: <input type="text" name="username">
+		PASSWORD: <input type="text" name="password">
+		<input type="submit" value="login">
+	</form>
 </div>
 
 </body> 
