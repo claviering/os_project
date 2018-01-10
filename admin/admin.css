@@ -1,11 +1,17 @@
 #admin_choosed
 {
 	position: absolute;
-	top:30%;
 	left:5%;
+	margin-top:20%;
 }
 
 .left_choose
 {
 	margin-bottom: 10px;
+}
+#show
+{
+	position: absolute;
+	margin-left: 20%;
+	margin-top: 5%;
 }

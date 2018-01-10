@@ -8,15 +8,16 @@
 	{
 	    die('Could not connect: ' . mysqli_error());
 	}
-	$tmp = "数据库连接成功!";
-	echo $tmp;
-	echo "<br>";
+	// $tmp = "数据库连接成功!";
+	//echo $tmp;
+	//echo "<br>";
 
 	//获取登录信息
 	$name = $_POST["username"];
 	$password = $_POST["password"];
 	$admin_user = "admin";
 	$student_user = "student";
+	$teacher_user= "teacher";
 	// echo "username ".$name."password ".$password;
 
 	//数据库数据选择,读信息
@@ -36,14 +37,16 @@
 		if ($db_id == $name && $db_passwd == $password && $db_user == $admin_user)
 		{
 			echo '<META HTTP-EQUIV="Refresh" CONTENT="0; URL=admin/admin.html">';	
+			break;
 		}
 		else if ($db_id == $name && $db_passwd == $password && $db_user == $student_user)
 		{
 			echo '<META HTTP-EQUIV="Refresh" CONTENT="0; URL=student/student.html">';	
+			break;
 		}
-		else
+		else if ($db_id == $name && $db_passwd == $password && $db_user == $teacher_user)
 		{
-			echo "flase";
+			echo '<META HTTP-EQUIV="Refresh" CONTENT="0; URL=teacher/teacher.html">';	
 			break;
 		}
 	}
