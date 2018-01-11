@@ -15,7 +15,7 @@ function add_test()
 	// element.appendChild(para);
 	del_child_node();
 	var para = document.createElement("form");
-	var node = document.createTextNode("成绩: ");
+	var node = document.createTextNode("考试科目: ");
 	para.appendChild(node);
 	var element = document.getElementById("show");
 	para.action = "add_score.php";
