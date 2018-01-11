@@ -9,3 +9,9 @@
 {
 	margin-bottom: 10px;
 }
+#show
+{
+	position: absolute;
+	margin-left: 20%;
+	margin-top: 5%;
+}
